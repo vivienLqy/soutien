@@ -53,3 +53,37 @@ label input:checked ~ div::before{
                 inset 1px 1px 1px rgba(0,0,0,0.4),
                 inset -1px -1px 4px rgba(255, 255, 255,0.2);
 }
+label input:checked ~ div::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background: rgb(0, 255, 64);
+    box-shadow: 0 0 5px rgb(0, 255, 64),
+                0 0 10px rgb(0, 255, 64),
+                0 0 15px rgb(0, 255, 64),
+                0 0 20px rgb(0, 255, 64),
+                0 0 25px rgb(0, 255, 64),
+                0 0 30px rgb(0, 255, 64);
+  }
+  label div::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background: rgb(255, 0, 4);
+    box-shadow: 0 0 5px rgb(255, 0, 4),
+                0 0 10px rgb(255, 0, 4),
+                0 0 15px rgb(255, 0, 4),
+                0 0 20px rgb(255, 0, 4),
+                0 0 25px rgb(255, 0, 4),
+                0 0 30px rgb(255, 0, 4);
+  }
